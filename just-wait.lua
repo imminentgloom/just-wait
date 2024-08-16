@@ -85,7 +85,7 @@ function setup_levels()
 end
 
 function setup_params()
-  params:add_separator(delayyyyyyy)
+  params:add_separator("delayyyyyyy")
   
   params:add_control("time", "time", controlspec.new(0.0001, 2, 'exp', 0, 0.3, "s"))
   params:set_action("time", function(x) engine.time(x) end)
